@@ -26,16 +26,16 @@
                 <div class="space-y-4">
                     <h3 class="text-xl font-bold">Our Services</h3>
                         <div class="flex space-x-4 pt-2">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.facebook.com/share/17cT5autnX/?mibextid=wwXIfr" class="text-gray-400 hover:text-white transition-colors">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://github.com/thayayat" class="text-gray-400 hover:text-white transition-colors">
+                       <i class="fab fa-github "></i
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.linkedin.com/in/keshar-thyayat-9a0517376/" class="text-gray-400 hover:text-white transition-colors">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>

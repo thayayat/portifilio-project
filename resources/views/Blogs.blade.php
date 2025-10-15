@@ -214,8 +214,6 @@
         </div>
     </main>
 
-
-
 </x-layout>
 
 <x-footers />

@@ -28,7 +28,7 @@
             <!-- Text Content -->
             <div class="lg:w-3/5">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Hi, I'm Keshar Thayat</h2>
-                <h3 class="text-xl text-indigo-600 font-semibold mb-6">Senior Frontend Developer</h3>
+                <h3 class="text-xl text-indigo-600 font-semibold mb-6">Senior FULL STACK  Developer</h3>
 
                 <p class="text-gray-600 mb-6">
                     I'm a passionate frontend developer with over 5 years of experience creating
@@ -47,20 +47,20 @@
                         <h4 class="text-xl font-semibold text-gray-800 mb-4">My Skills</h4>
                         <div class="flex flex-wrap gap-3">
                             <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">React</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">laravel</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Html css</span>
                             <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
                             <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">UI/UX Design</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Responsive Design</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm"> Design</span>
                         </div>
                     </div>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300 text-center">
+                      <a href="/cv.pdf" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300 text-center">
                             Download CV
                         </a>
-                        <a href="#" class="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition duration-300 text-center">
+                        <a href="/contact" class="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition duration-300 text-center">
                             Contact Me
                         </a>
                     </div>

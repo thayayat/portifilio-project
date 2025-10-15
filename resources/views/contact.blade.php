@@ -85,7 +85,7 @@
                 <div class="bg-white rounded-xl contact-shadow p-8">
                     <h2 class="text-2xl font-bold text-gray-800 mb-6">Follow Us</h2>
                     <div class="flex space-x-4">
-                        <a href="#" class="bg-gray-100 hover:bg-purple-600 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                        <a href="https://www.facebook.com/share/17cT5autnX/?mibextid=wwXIfr" class="bg-gray-100 hover:bg-purple-600 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
                             <i class="fab fa-facebook-f"></i>
                         </a>
 
@@ -93,7 +93,7 @@
                         <a href="#" class="bg-gray-100 hover:bg-purple-600 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="bg-gray-100 hover:bg-purple-600 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                        <a href="https://www.linkedin.com/in/keshar-thyayat-9a0517376/" class="bg-gray-100 hover:bg-purple-600 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>

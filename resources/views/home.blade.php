@@ -20,25 +20,25 @@
                 </p>
 
                 <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#projects"
+                    <a href="/services"
                     class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition duration-300 shadow-lg">
                     View My Work
                 </a>
-                <a href="#contact"
+                <a href="/contact"
                 class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-100 transition duration-300">
                 Contact Me
             </a>
         </div>
 
         <div class="flex space-x-6 pt-6">
-            <a href="https://github.com/" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+            <a href="https://github.com/thayayat" class="text-gray-500 hover:text-indigo-600 transition duration-300">
                         <i class="fab fa-github text-3xl"></i>
                     </a>
-                    <a href="https://media.licdn.com/dms/image/v2/D4E03AQEywZwmbEvTPQ/profile-displayphoto-scale_100_100/B4EZg2dT8IHIAc-/0/1753260313408?e=1761782400&v=beta&t=MJ_Mi8Z-fM3huRJ82KbetHtXyZjU0hehSdzI8T2LFgU"
+                    <a href="https://www.linkedin.com/in/keshar-thyayat-9a0517376/"
                     class="text-gray-500 hover:text-indigo-600 transition duration-300">
                     <i class="fab fa-linkedin text-3xl"></i>
                 </a>
-                <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+                <a href="https://www.facebook.com/share/17cT5autnX/?mibextid=wwXIfr" class="text-gray-500 hover:text-indigo-600 transition duration-300">
                     <i class="fa-brands fa-facebook text-3xl"></i>
                     </a>
                     <a href="#" class="text-gray-500 hover:text-indigo-600 transition duration-300">
@@ -154,10 +154,10 @@
                     <div class="h-40 bg-gradient-to-r from-purple-500 to-indigo-600 relative overflow-hidden">
                         <img src="/certif.jpg"
                              alt="AWS Cloud"
-                             class="w-full h-full object-cover opacity-20">
-                        <div class="absolute inset-0 flex items-center justify-center">
+                             class="w-full h-full object-cover opacity-100">
+                        {{-- <div class="absolute inset-0 flex items-center justify-center">
                             <i class="fab fa-aws text-white text-6xl"></i>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
@@ -182,20 +182,20 @@
                 <!-- Certification 4 - Security -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border-l-4 border-red-500">
                     <div class="h-40 bg-gradient-to-r from-red-500 to-pink-600 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                        <img src="/laravel.jpg"
                              alt="Cybersecurity"
-                             class="w-full h-full object-cover opacity-20">
-                        <div class="absolute inset-0 flex items-center justify-center">
+                             class="w-full h-full object-cover opacity-100">
+                        {{-- <div class="absolute inset-0 flex items-center justify-center">
                             <i class="fas fa-shield-alt text-white text-6xl"></i>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
-                            <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-medium">Security</span>
+                            <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-medium">completed</span>
                             <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-medium">Verified</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Certified Ethical Hacker</h3>
-                        <p class="text-gray-600 mb-4">EC-Council - 2022</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Certified laravel and full stack development</h3>
+
                         <div class="flex items-center text-sm text-gray-500 mb-4">
                             <i class="fas fa-calendar-alt mr-2"></i>
                             <span>Aug 2022 - Aug 2025</span>
@@ -211,23 +211,23 @@
                 <!-- Certification 6 - In Progress -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border-l-4 border-indigo-500">
                     <div class="h-40 bg-gradient-to-r from-indigo-500 to-purple-600 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                        <img src="/github.jpg"
                              alt="React Development"
-                             class="w-full h-full object-cover opacity-20">
-                        <div class="absolute inset-0 flex items-center justify-center">
+                             class="w-full h-full object-cover opacity-100">
+                        {{-- <div class="absolute inset-0 flex items-center justify-center">
                             <i class="fab fa-react text-white text-6xl"></i>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
-                            <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm font-medium">In Progress</span>
-                            <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs font-medium">80% Complete</span>
+                            <span class="bg-indigo-100 text-red-600 px-3 py-1 rounded-full text-sm font-medium">complete</span>
+                            <span class="bg-blue-100 text-green-500600 px-2 py-1 rounded text-xs font-medium">verifird</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">React Developer</h3>
-                        <p class="text-gray-600 mb-4">Meta - Expected 2024</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Git and github</h3>
+
                         <div class="flex items-center text-sm text-gray-500 mb-4">
                             <i class="fas fa-hourglass-half mr-2"></i>
-                            <span>Started Jan 2023</span>
+                            <span>Started august 2025</span>
                         </div>
                         <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-lg font-medium transition duration-300 flex items-center justify-center">
                             View Progress
