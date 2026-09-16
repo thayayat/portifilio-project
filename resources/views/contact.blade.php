@@ -24,7 +24,7 @@
                         </div>
                         <div>
                             <label for="subject" class="block text-gray-700 mb-2">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="How can we help you?">
+                            <input type="text" id="subject " class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="How can we help you?">
                         </div>
                         <div>
                             <label for="message" class="block text-gray-700 mb-2">Message</label>
@@ -131,4 +131,4 @@
 
 
 </x-layout>
-<x-footers/>
+<x-footers />

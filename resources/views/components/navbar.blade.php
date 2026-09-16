@@ -6,14 +6,15 @@
                     <div>
                         <img src="/imglogo.png" alt=""  class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white">
                     </div>
-                    <span>Keshar</span>
+                    <span>{{$profile?->name ?? 'portifolio' }}</span>
                 </a>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8 text-white">
                     <a href="/" class= "hover:text-indigo-600 transition-colors font-medium">Home</a>
                     <a href="/about" class=" hover:text-indigo-600 transition-colors font-medium">About</a>
-                    <a href="/Blogs" class=" hover:text-indigo-600 transition-colors font-medium">Blogs</a>
+                    <a href="/blogs" class=" hover:text-indigo-600 transition-colors font-medium">Blogs</a>
+                    <a href="/projects" class=" hover:text-indigo-600 transition-colors font-medium">Projects</a>
                     <a href="/services" class=" hover:text-indigo-600 transition-colors font-medium">Services</a>
                     <a href="/contact" class=" hover:text-indigo-600 transition-colors font-medium">contact</a>
 

@@ -1,89 +1,225 @@
 <x-layout>
 
 <!-- About Section -->
-<section class="py-16 px-4">
+<section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
     <div class="max-w-6xl mx-auto">
+
         <!-- Section Header -->
-        <div class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">About Me</h1>
-            <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+        <div class="text-center mb-14">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+                {{ $aboutgenerate->title }}
+            </h1>
+
+            <div class="mt-5 flex justify-center">
+                <span class="w-20 h-1 rounded-full bg-indigo-600"></span>
+            </div>
         </div>
 
         <!-- Main Content -->
-        <div class="flex flex-col lg:flex-row items-center gap-12">
-            <!-- Image Section -->
-            <div class="lg:w-2/5 flex justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+            <!-- Profile Image -->
+            <div class="lg:col-span-5 flex justify-center">
                 <div class="relative">
-                    <div class="w-64 h-64 md:w-80 md:h-80 bg-indigo-100 rounded-full overflow-hidden shadow-lg">
-                        <img src="/IMG_7980.PNG"
-                        alt="Profile Picture" class="w-full h-full object-cover">
+
+                    <div class="absolute inset-0 rounded-full bg-indigo-100 scale-105 opacity-60"></div>
+
+                    <div class="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80
+                                rounded-full overflow-hidden border-8 border-white shadow-2xl">
+
+                        <img
+                            src="{{ asset('storage/' . $aboutgenerate->image) }}"
+                            alt="{{ $aboutgenerate->name }}"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-105"
+                        >
+
                     </div>
-                    <div class="absolute -bottom-4 -right-4 bg-indigo-600 text-white p-4 rounded-lg shadow-lg">
-                        <p class="font-bold text-lg">1+ Years</p>
-                        <p class="text-sm">Experience</p>
+
+                    <!-- Experience -->
+                    <div class="absolute -bottom-5 -right-2 sm:-right-5
+                                bg-indigo-600 text-white rounded-2xl px-6 py-4
+                                shadow-xl text-center">
+
+                        <h3 class="text-2xl font-extrabold">
+                            {{ $aboutgenerate->experience }}
+                        </h3>
+
+                        <p class="text-xs sm:text-sm text-indigo-100">
+                            {{ $aboutgenerate->experience > 1 ? 'Years Experience' : 'Year Experience' }}
+                        </p>
                     </div>
+
                 </div>
             </div>
 
-            <!-- Text Content -->
-            <div class="lg:w-3/5">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Hi, I'm Keshar Thayat</h2>
-                <h3 class="text-xl text-indigo-600 font-semibold mb-6">Senior FULL STACK  Developer</h3>
+            <!-- Content -->
+            <div class="lg:col-span-7">
 
-                <p class="text-gray-600 mb-6">
-                    I'm a passionate frontend developer with over 5 years of experience creating
-                    responsive, user-friendly web applications. I specialize in modern JavaScript
-                    frameworks and have a keen eye for design and user experience.
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">
+                    Hi, I am
+                    <span class="text-indigo-600">
+                        {{ $aboutgenerate->name }}
+                    </span>
+                </h2>
+
+                <h3 class="text-lg sm:text-xl font-semibold text-indigo-600 mb-6">
+                    {{ $aboutgenerate->job_title }}
+                </h3>
+
+                <!-- Dynamic Description -->
+                <p class="text-gray-600 text-sm sm:text-base leading-7
+                          max-w-2xl text-justify mb-8">
+                    {{ $aboutgenerate->description }}
                 </p>
 
-                <p class="text-gray-600 mb-8">
-                        My approach combines technical expertise with creative problem-solving to
-                        deliver high-quality solutions that meet both user needs and business objectives.
-                        I'm always eager to learn new technologies and take on challenging projects.
-                    </p>
+                <!-- Information Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
 
-                    <!-- Skills -->
-                    <div class="mb-8">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-4">My Skills</h4>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">React</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">laravel</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Html css</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">UI/UX Design</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm"> Design</span>
+                    <!-- Experience Card -->
+                    <div class="flex items-center gap-4 p-4 rounded-xl
+                                bg-gray-50 border border-gray-100
+                                hover:border-indigo-200 hover:shadow-md
+                                transition duration-300">
+
+                        <div class="w-11 h-11 shrink-0 flex items-center justify-center
+                                    rounded-lg bg-indigo-100 text-indigo-600">
+
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0
+                                         9 9 0 0118 0z"/>
+                            </svg>
+
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-gray-500">
+                                Experience
+                            </p>
+
+                            <p class="font-bold text-gray-800">
+                                {{ $aboutgenerate->experience }}+ Years
+                            </p>
                         </div>
                     </div>
 
-                    <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4">
-                      <a href="/cv.pdf" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300 text-center">
+                    <!-- Profession Card -->
+                    <div class="flex items-center gap-4 p-4 rounded-xl
+                                bg-gray-50 border border-gray-100
+                                hover:border-indigo-200 hover:shadow-md
+                                transition duration-300">
+
+                        <div class="w-11 h-11 shrink-0 flex items-center justify-center
+                                    rounded-lg bg-indigo-100 text-indigo-600">
+
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M21 13.255A23.931 23.931 0 0112 15
+                                         c-3.183 0-6.22-.62-9-1.745M16 6V4
+                                         a2 2 0 00-2-2h-4a2 2 0 00-2 2v2
+                                         m4 6h.01M5 20h14a2 2 0 002-2V8
+                                         a2 2 0 00-2-2H5a2 2 0 00-2 2v10
+                                         a2 2 0 002 2z"/>
+                            </svg>
+
+                        </div>
+
+                        <div class="min-w-0">
+                            <p class="text-xs text-gray-500">
+                                Profession
+                            </p>
+
+                            <p class="font-bold text-gray-800 truncate">
+                                {{ $aboutgenerate->job_title }}
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4">
+
+                    @if(!empty($aboutgenerate->resume) && file_exists(public_path('storage/' . $aboutgenerate->resume)))
+                        <a href="{{ asset('storage/' . $aboutgenerate->resume) }}"
+                           target="_blank"
+                           class="inline-flex items-center justify-center gap-2
+                                  px-6 py-3 rounded-lg bg-indigo-600 text-white
+                                  font-semibold shadow-lg shadow-indigo-200
+                                  hover:bg-indigo-700 hover:-translate-y-1
+                                  transition duration-300">
+
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M12 10v6m0 0l-3-3m3 3l3-3
+                                         M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5
+                                         a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+
                             Download CV
                         </a>
-                        <a href="/contact" class="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition duration-300 text-center">
-                            Contact Me
-                        </a>
-                    </div>
-                </div>
-            </div>
+                    @endif
 
-            <!-- Stats Section -->
-            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="text-3xl font-bold text-indigo-600 mb-2">10+</div>
-                    <div class="text-gray-600">Projects Completed</div>
+                    <a href="/contact"
+                       class="inline-flex items-center justify-center gap-2
+                              px-6 py-3 rounded-lg border-2 border-indigo-600
+                              text-indigo-600 font-semibold
+                              hover:bg-indigo-600 hover:text-white
+                              hover:-translate-y-1 transition duration-300">
+
+                        Contact Me
+                    </a>
+
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="text-3xl font-bold text-indigo-600 mb-2">30+</div>
-                    <div class="text-gray-600">Happy Clients</div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="text-3xl font-bold text-indigo-600 mb-2">1+</div>
-                    <div class="text-gray-600">Years Experience</div>
-                </div>
+
             </div>
         </div>
 
+        <!-- Statistics -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-16">
+
+            <div class="bg-white rounded-2xl border border-gray-100
+                        shadow-sm p-6 text-center
+                        hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+                <h3 class="text-3xl font-extrabold text-indigo-600">10+</h3>
+                <p class="text-sm text-gray-500 mt-2">Projects Completed</p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-100
+                        shadow-sm p-6 text-center
+                        hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+                <h3 class="text-3xl font-extrabold text-indigo-600">30+</h3>
+                <p class="text-sm text-gray-500 mt-2">Happy Clients</p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-100
+                        shadow-sm p-6 text-center
+                        hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+                <h3 class="text-3xl font-extrabold text-indigo-600">
+                    {{ $aboutgenerate->experience }}
+                </h3>
+
+                <p class="text-sm text-gray-500 mt-2">
+                    Years Experience
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
      <!-- Header -->
 <div class="py-16 px-4 bg-gray-50">
@@ -310,5 +446,7 @@
                 </div>
             </div>
         </div>
-</x-footer>
+    </x-layout>
 
+
+    <x-footers />

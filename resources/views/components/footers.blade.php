@@ -48,11 +48,11 @@
                     <div class="space-y-2 text-gray-400">
                         <p class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span> kailalii nepal City,</span>
+                            <span> kathmandu maitadevi  nepal,</span>
                         </p>
                         <p class="flex items-center">
                             <i class="fas fa-phone-alt mr-3"></i>
-                            <span>+977 98*</span>
+                            <span>+977 9766066773 </span>
                         </p>
                         <p class="flex items-center">
                             <i class="fas fa-envelope mr-3"></i>
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+</footers>
 
 
 
