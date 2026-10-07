@@ -10,13 +10,13 @@
 
                 <!-- Bio -->
                 <span class="inline-block text-indigo-600 font-semibold text-sm sm:text-base">
-                    {{$profile?->name ?? 'portifolio' }}
+                    {{$profile?->bio ?? 'portifolio'}}
                 </span>
 
                 <!-- Name -->
                 <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold
                            text-gray-900 tracking-tight">
-                    {{ $profile?->bio ?? 'Welcome to my portifolio' }}
+                    {{ $profile?->name ?? 'Welcome to my portifolio' }}
                 </h1>
 
                 <!-- Title -->
@@ -195,7 +195,7 @@
                     <div class="relative flex flex-col items-center">
 
                         <!-- Icon / Image -->
-                        <div class="w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center mb-4 group-hover:shadow-2xl transition-all duration-300 group-hover:scale-110 overflow-hidden">
+                        <div class="w-50 h-50 rounded-full bg-gray-200 shadow-lg flex items-center justify-center mb-4 group-hover:shadow-2xl transition-all duration-300 group-hover:scale-110 overflow-hidden">
                             @if($skill->image)
                                 <img
                                     src="{{ asset('storage/' . $skill->image) }}"
@@ -228,16 +228,28 @@
 </section>
 
 <!-- Certifications Grid -->
-<div class="mb-16">
+
+<section class="py-12  bg-gradient-to-r from-purple-800 to-indigo-600  mr-4 shadow-2xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Certifications</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+              Professional credentials that validate my skills and expertise
+            </p>
+        </div>
+
+
+
+{{-- <div class="mb-16">
     <div class="flex items-center mb-8">
         <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mr-4">
             <i class="fas fa-award text-white text-2xl"></i>
         </div>
-        <div>
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">Certifications</h2>
+        <div class="justify-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 justify-center">Certifications</h2>
             <p class="text-gray-600">Professional credentials that validate my skills and expertise</p>
         </div>
-    </div>
+    </div> --}}
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         @forelse ($certifications as $certification)

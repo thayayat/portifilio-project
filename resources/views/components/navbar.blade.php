@@ -6,7 +6,7 @@
                     <div>
                         <img src="/imglogo.png" alt=""  class="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white">
                     </div>
-                    <span>{{$profile?->name ?? 'portifolio' }}</span>
+                    <span>{{ $profile?->name ?? 'portifolio' }}</span>
                 </a>
 
                 <!-- Desktop Navigation -->

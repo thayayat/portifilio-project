@@ -6,6 +6,9 @@ use App\Models\AboutGenerate;
 use App\Models\Certification;
 use App\Models\Profile;
 use App\Models\Skill;
+use App\Models\SoftSkill;
+use App\Models\TechnicalSkill;
+use App\Models\WorkExperience;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -26,13 +29,22 @@ class PageController extends Controller
 
     return view('home', compact('profile', 'skills', 'certifications', 'stats'));
 }
-    public function about(Request $request)
-    {
-        $aboutgenerate = AboutGenerate::first();
-        $certifications = Certification::all();
-        return view('about', compact('aboutgenerate', 'certifications'));
-    }
+  public function about(Request $request)
+{
+    $aboutgenerate   = AboutGenerate::first();
+    $certifications  = Certification::all();
+    $technicalSkills = TechnicalSkill::orderBy('order')->get();
+    $workExperiences = WorkExperience::orderBy('order')->get();
+    $softSkills      = SoftSkill::orderBy('order')->get();
 
+    return view('about', compact(
+        'aboutgenerate',
+        'certifications',
+        'technicalSkills',
+        'workExperiences',
+        'softSkills'
+    ));
+}
 
     public function services()
     {
